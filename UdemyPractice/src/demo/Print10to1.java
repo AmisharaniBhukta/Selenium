@@ -1,0 +1,46 @@
+package demo;
+
+public class Print10to1 {
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		resverseString();
+		
+		Print10to1 print=new Print10to1();
+		//print.printNumber();
+		print.evenNumber();
+	}
+	Print10to1(){
+		printNumber();
+		//evenNumber();
+
+	}
+	public void printNumber() {
+
+		for(int i=10;i>=1;i--)
+		{
+			System.out.println(i);
+		}
+	}
+public void evenNumber() {
+	int num=10;
+	if(num%2==0) {
+		System.out.println("Number is even");
+	}
+	else {System.out.println("Number is odd");}
+}
+public static void resverseString() {
+	
+	String s="Amisha";
+	String rev="";
+	for(int i=0;i<s.length();i++)
+	{
+		rev=s.charAt(i)+rev;
+	}
+	System.out.println(rev);
+}
+
+
+}
